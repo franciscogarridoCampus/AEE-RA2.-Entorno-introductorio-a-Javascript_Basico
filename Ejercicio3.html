@@ -8,6 +8,7 @@
 
 
 <script>
+   //pedir al usuario los 2 parametros para realizar la operacion, y pedir que operacion quiere realizar
     var num1=parseInt(prompt("Inserte el primer numero: "));
     var num2=parseInt(prompt("Inserte el segundo numero: "));
     var opcion=prompt("Elige una de estas opciones: 1.Suma, 2.Resta, 3.Multiplicacion, 4.Division")
@@ -41,6 +42,7 @@ console.log("Francisco Garrido Ribeiro ");
     console.log("La multiplicacion de ambos numeros("+num1+" y "+num2+") es: "+ resultado);
  }
  function division(a,b){
+   //Si el segundo parametro es 0 no podra realizar la división
     if(b==0){
         console.log("No se puede dividir entre 0");
     }else{

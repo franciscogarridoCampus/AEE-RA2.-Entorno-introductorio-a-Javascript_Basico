@@ -8,6 +8,7 @@
 
 
 <script>
+    //Mostrar el resultado de la resta en un div
     function mostrarEnElemento(idElemento, mensaje) {
       document.getElementById(idElemento).innerHTML = mensaje;
     }
@@ -22,7 +23,7 @@
 
     function restar(a, b) {
       let resultado = a - b;
-      mostrarEnElemento("resultado", "La resta de ambos números es: " + resultado);
+      mostrarEnElemento("resultado", "La resta de ambos números es: " + resultado);//se pone "resultado", para indicar donde debe ir el mensaje porque tiene la id resultado el div
     }
 </script>
 
