@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>Francisco Garrido Ribeiro</title>
+<body>
+
+
+<div id="resultado"></div>
+
+
+<script>
+    function mostrarEnElemento(idElemento, mensaje) {
+      document.getElementById(idElemento).innerHTML = mensaje;
+    }
+
+
+    var num1 = parseInt(prompt("Inserte el primer número: "));
+    var num2 = parseInt(prompt("Inserte el segundo número: "));
+
+
+    restar(num1, num2);
+
+
+    function restar(a, b) {
+      let resultado = a - b;
+      mostrarEnElemento("resultado", "La resta de ambos números es: " + resultado);
+    }
+</script>
+
+
+</body>
+</html>
+
+

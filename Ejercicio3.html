@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<title>Francisco Garrido Ribeiro</title>
+<body>
+
+
+</body>
+
+
+<script>
+    var num1=parseInt(prompt("Inserte el primer numero: "));
+    var num2=parseInt(prompt("Inserte el segundo numero: "));
+    var opcion=prompt("Elige una de estas opciones: 1.Suma, 2.Resta, 3.Multiplicacion, 4.Division")
+
+
+    if(opcion==1){
+    suma(num1,num2);
+    }else if(opcion==2){
+    resta(num1,num2);
+    }else if(opcion==3){
+    multiplicacion(num1,num2);
+    }else if(opcion==4){
+    division(num1,num2);
+    }else{
+        console.log("No seleccionaste ninguna de las opciones");
+    }
+
+
+
+console.log("Francisco Garrido Ribeiro ");
+ function suma(a,b){
+    let resultado=a+b;
+    console.log("La suma de ambos numeros("+num1+" y "+num2+") es: "+ resultado);
+ }
+ function resta(a,b){
+    let resultado=a-b;
+    console.log("La resta de ambos numeros("+num1+" y "+num2+") es: "+ resultado);
+ }
+ function multiplicacion(a,b){
+    let resultado=a*b;
+    console.log("La multiplicacion de ambos numeros("+num1+" y "+num2+") es: "+ resultado);
+ }
+ function division(a,b){
+    if(b==0){
+        console.log("No se puede dividir entre 0");
+    }else{
+        let resultado=a/b;
+        console.log("La división de ambos numeros("+num1+" y "+num2+") es: "+ resultado);
+    }
+ }
+</script>
+</html>
